@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mad Libs</title>
+</head>
+<body>
+<p>
+	My name is a web <span id="noun"> </span> Mostly i like to provide <span id="adjective"></span> people use me to <span id="verb"></span>
+</p>
+<script>
+	var noun=prompt("My name is a web ..?");
+	document.querySelector('#noun').textContent= noun;
+
+	var adjective = prompt("Mostly i like to provide?");
+	document.querySelector('#adjective').textContent= adjective;
+
+	var verb = prompt("people use me to?");
+	document.querySelector('#verb').textContent= verb;
+</script>
+</body>
+</html>
