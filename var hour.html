@@ -1,0 +1,26 @@
+<!-- 
+Create variables "hour" and "minute" to reflect the current time.
+Write an expression to calculate how many seconds until midnight.
+Change "minute" to be accurate again as time has probably passed.
+Run the same calculation again (press the up key in the console to scroll back to it). 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variables</title>
+</head>
+<body>
+<div id="example"></div>
+<script>
+	var midnight=new Date();
+	midnight.setHours(24,0,0);
+	var tohour=midnight.getHours();
+	var tominute=midnight.getMinutes();
+	var now=new Date();
+	var hour = now.getHours();
+	var minute = now.getMinutes();
+	var hour =hour - tohour;
+	var minute =minute - tominute;
+	var seconds = (hour * 3600) + (minute * 60)
+	document.write( "it is : " + seconds + " to midnight");
+</script>
